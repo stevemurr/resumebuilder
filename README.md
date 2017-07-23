@@ -23,11 +23,11 @@ cvcolor = "blue"
 [personal]
 firstName = "Steven"
 lastName = "Murr"
-phoneNumber = "408.4102513"
+phoneNumber = "408.5555555"
 github = "stevemurr"
-email = "stevemurr@gmail.com"
-address = "940 Scott Ct."
-cityAndState = "Campbell, CA 95008"
+email = "stevemurr@g.com"
+address = "555 Lincoln Ct."
+cityAndState = "San Jose, CA"
 title = "Software Engineer / IoT Prototyping"
 
 [skills]

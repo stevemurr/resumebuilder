@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper, sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=0.92]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\addtolength{\oddsidemargin}{+.25in}
+\addtolength{\textwidth}{-.5in}
+
+\definecolor{light_gray}{HTML}{b9b9b9}
+\definecolor{dark_gray}{HTML}{636363}
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\textcolor{dark_gray}{Steven}} % Your first name
+\familyname{\textcolor{dark_gray}{Murr}} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{<.Title>}
+\address{<.Address>}{<.CityStateZip>}
+\phone{<.Phone>}
+\email{<.Email>}
+%\homepage{staff.org.edu/~jsmith}{} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\homepage{<.Github>}
+%\extrainfo{github.com/brianuosseph}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%   SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+\cvitem{Langauges}{\textbf{Proficient:} \hspace{17pt} Python, Go, NodeJS, Bash \newline
+				\textbf{Familiar with:} \hspace{0.4pt} Swift, Java, C }
+\cvitem{Frameworks}{React, Angular, SciKit Learn}
+\hspace{-0.14cm}\cvitem{Tools/Libraries}{\hspace{0.14cm}Git, Travis CI, GNU Make, Bootstrap, jQuery}
+\cvitem{Devices}{Raspberry PI, Banana PI, ESP8266, Arduino}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{Relevant Work}
+\cventry{Feb 2016 \\-- Present}{Software Engineer / Cortana}{Microsoft}{}{}{
+	\textcolor{dark_gray}{\textit{Python, Go, React, Docker, MongoDB, BoltDB, Postgres}}
+	\begin{itemize}
+		\item Worked closely with third parties to develop and deploy custom speech platform software, build custom TTS voice fonts and explore new use cases for Speaker Recognition, Audio Segmentation and Spectral Repair. 
+		\item Developed web portal that aggregates audio, Excel Files and font building data to allow users to better understand training data used to develop TTS fonts.
+		\item Developed a web tool for studio vendors to ensure spectral consistency and allow feedback on specific features such as F0, RMS and speaking rate.
+		\item Prototyped a technique to combine multiple domain specific voice fonts to improve Cortana VQ in a specific domain.
+		\item Prototyped a plugin framework to allow quick modification of audio plugins on ALSA sinks for use in embedded devices.
+		\item Extended existing VX work to improve user understanding of long lists. 
+		\item Deployed tools on Window, Linux and Mac using Docker.
+	\end{itemize}
+}
+
+\cventry{Jul 2010 \\-- Feb 2016}{Audio Engineer}{Self-Employed}{}{}{
+	\textcolor{dark_gray}{\textit{Kontakt Scripting, C++, JUCE, duktape}}
+	\begin{itemize}
+		\item Produced music for Grammy award-winning mainstream and Latin recording artists including Smash Mouth, Los Tigres Del Norte, Suenatron, Gin Blossoms, and El Chapo De Sineloa.
+		\item Scripted in-house sample libraries in Kontakt.
+		\item Reverse engineered Logic's Scripter plugin using C++ and embedded JavaScript interpreter duktape.
+	\end{itemize}
+}
+
+\cventry{Apr 2008 \\-- Jul 2010}{QA Engineer}{Namco Networks}{}{}{
+	\textcolor{dark_gray}{\textit{Java}}
+	\begin{itemize}
+		\item Built and tested mobile games, fixing minor issues such as resolution device targeting, localization, and setting define flags.
+		\item Received top department awards for achieving highest pass rate and consistently reporting high severity defects.
+		\item Memorized multiple carrier and internal standards, authored test plans, and became adept with Sea Pines? Test Tracker Pro.
+		\item Worked in close liaison with programmers and producers, acting as the bridge between engineering, QA, and production.
+	\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{Ongoing}{Bachelor of Science}{West Valley and Mission Community College}{}{}{
+	\textbf{Computer Science 60\% Complete}
+}
+\cventry{Ongoing}{Self-Directed Learning}{EdX Coursera}{}{}{
+	Attended InterSpeech 2016
+	Harvard's CS50 C programming course, Google's Python course, Berkeley's CS 162 Operating Systems course, and Stanford's Programming Paradigms course. 
+}
+
+%----------------------------------------------------------------------------------------
+%   Extracurricular SECTION
+%----------------------------------------------------------------------------------------
+\vspace{1cm}
+\section{Extracurricular}
+
+\cventry{Oct 2016 \\-- Present}{Open Source Innovation Lab}{Glider Labs}{}{}{
+	\textcolor{dark_gray}{\textit{Go}}
+	\begin{itemize}
+		\item Collective of hackers looking to make the world more programmable.
+		\item Contributed to the development of Go programming educational materials.
+		\item Prototyped IoT sensor-based devices.
+		\item \url{http://gliderlabs.com}
+	\end{itemize}
+}
+
+\cventry{Jun 2017 \\-- Present}{Alsa Plugin Framework}{Personal Project}{}{}{
+	\textcolor{dark_gray}{\textit{ALSA, Python, Bash}}
+	\begin{itemize}
+		\item Developed to simplify usage of LADSPA audio plugins in ALSA.
+		\item \url{https://github.com/stevemurr/alsa-plugin-framework}
+	\end{itemize}
+}
+
+\cventry{Apr 2017 \\-- Present}{Agriculture Automation}{Oxylus}{}{}{
+	\textcolor{dark_gray}{\textit{Go, BoltDB}}
+	\begin{itemize}
+		\item Developed an event system that works with off-the-shelf IoT devices.
+		\item \url{https://github.com/stevemurr/oxylus-events}
+	\end{itemize}
+}
+
+\cventry{Jun 2017 \\-- Present}{Secure Router}{Personal Project}{}{}{
+	\textcolor{dark_gray}{\textit{BPI-R1, Go, OpenVPN}}
+	\begin{itemize}
+		\item Devloping router targeted at consumers which provides DNS level ad blocking and personal VPN. 
+		\item Currently working on automating VPN setup.  
+	\end{itemize}
+}
+
+\cventry{Jul 2014 \\-- Aug 2014}{Internet Radio Monitoring Service}{Wav Charts}{}{}{
+	\textcolor{dark_gray}{\textit{Python, MySQL}}
+	\begin{itemize}
+		\item Built an online radio monitoring platform using audio fingerprinting to track song plays.
+		\item Deployed on Google App Engine.
+	\end{itemize}
+}
+
+\cventry{Jul 2015 \\-- Aug 2015}{Raspberry PI Based Lecture Recording}{Lecture Keeper}{}{}{
+	\textcolor{dark_gray}{\textit{Python, MySQL}}
+	\begin{itemize}
+		\item Created a lecture-recording device using a Raspberry Pi that automates the video capture, audio recording, and file upload to the cloud. Designed as a cost effective solution for students to easily access and archive lectures. 
+		\item A demo of it in action is available on YouTube at \url{https://youtu.be/6QNrnzQUXQ0}
+	\end{itemize}
+}
+
+\cventry{Oct 2015 \\-- Oct 2015}{Raspberry PI Based Entertainment Device}{Apple TV Clone}{}{}{
+	\textcolor{dark_gray}{\textit{Python, Swift}}
+	\begin{itemize}
+		\item Created an Apple TV clone using a Raspberry Pi controlled by an iPhone app that allowed users to find content via torrents.
+		\item A demo of it in action is available on YouTube at: https://www.youtube.com/watch?v=wH6H2oUoijM
+	\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%   RELEVANT PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Relevant Projects}
+
+%\subsection{Personal Projects}
+%\cventry{C++}{Audio Effect Plugins}{\textcolor{dark_gray}{JUCE}}{}{}{
+%	\begin{itemize}
+%		\item Designed a filter, equalizer, delay, compressor, and binaural panner as VST audio plugins
+%	\end{itemize}
+%}
+
+%\cventry{Rust}{Audio Libraries}{}{}{}{
+%	\begin{itemize}
+%		\item Implemented audio coding and processing libraries for \textit{.wav} and \textit{.aiff} files
+%	\end{itemize}
+%}
+
+% Vocational project
+%\cventry{PHP}{Donation and Membership Management Application}{\textcolor{dark_gray}{CakePHP 3}}{}{}{
+%	\begin{itemize}
+%		\item Automates letter and chart generation using CakePdf, WkHtmlToPdf, and GChart
+%		\item Developed for the Charlottesville Municipal Band -- a non-profit music performance organization
+%		\item Leadership, communication, and documentation roles alternated between team members after sprints
+%	\end{itemize}
+%}
+
+
+%\cventry{Ruby}{SoundCloud Reproduction}{\textcolor{dark_gray}{Ruby on Rails, Rspec, Capybara}}{}{}{
+%	\begin{itemize}
+%		\item Ongoing project to replicate multiple features of the SoundCloud web application using popular gems
+%	\end{itemize}
+%}
+
+%\cventry{C++}{Wavefront Model Renderer}{\textcolor{dark_gray}{OpenGL}}{}{}{
+%	\begin{itemize}
+%		\item Renders \textit{.obj} exports using \textit{glm} for camera movement and \textit{glfw3} for windowing
+%	\end{itemize}
+%}
+
+%\cventry{JavaScript}{Web Audio Player}{\textcolor{dark_gray}{Backbone.js, Web Audio API}}{}{}{
+%	\begin{itemize}
+%		\item Supports drag and drop of audio files and renders discrete spectral visualization of audio playback
+%	\end{itemize}
+%}
+
+%\cventry{C++}{Web Server}{}{}{}{
+%	\begin{itemize}
+%		\item Responds to HTTP 1.1 GET and POST requests with some support for dynamic pages via CGI scripts
+%	\end{itemize}
+%}
+
+%\subsection{Vocational}
+
+%\cventry{}{Lightshow}{}{Android}{}{
+%	\begin{itemize}
+%		\item Mobile application for interacting with SoundCloud API 
+%		\item Originally designed to communicate with Raspberry Pi LED strip via HTTP requests
+%	\end{itemize}
+%}
+
+%\cventry{}{Song Tracker}{}{PHP}{}{
+%	\begin{itemize}
+%		\item Web application for tracking artists and providing links to sites hosting song
+%		\item Uses Flight PHP framework for routing to allow bookmark--able artist pages
+%	\end{itemize}
+%}
+
+%\cventry{}{Course Questioning}{}{PHP}{}{
+%	\begin{itemize}
+%		\item Web application developed with Bootstrap, PHP, AJAX, jQuery, and MySQL for online interaction
+%		\item Constructed database using ER diagram and Normal forms
+%	\end{itemize}
+%}
+
+%\cventry{}{Raytracer}{}{Python}{}{
+%	\begin{itemize}
+%		\item Renders objects in scene with shadows, point and sun lighting
+%	\end{itemize}
+%}
+
+%\cventry{}{2D Rasterizer}{}{Java}{}{
+%	\begin{itemize}
+%		\item Draws lines and basic shapes and includes implementations of gouraud shading and alpha blending 
+%	\end{itemize}
+%}
+
+
+
+%----------------------------------------------------------------------------------------
+%   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+
+\end{document}
